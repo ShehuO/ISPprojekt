@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sq">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f3f3;
+        }
+
+        .subscribe-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .subscribe-container h2 {
+            margin-bottom: 15px;
+        }
+
+        .subscribe-container input[type="email"] {
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .subscribe-container button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .subscribe-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="subscribe-container">
+        <h2>Abonohu per lajme!</h2>
+        <form action="subscribe.php" method="post">
+            <input type="email" name="email" placeholder="Shkruani email-in tuaj" required>
+            <br>
+            <button type="submit">Abonohu</button>
+        </form>
+    </div>
+</body>
+
+</html>
